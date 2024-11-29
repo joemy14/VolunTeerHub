@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Discover Opportunities</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .header {
+      background-image: url('https://placehold.co/1920x300');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    .sidebar {
+      width: 25%;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+    .content {
+      width: 75%;
+      padding: 20px;
+    }
+    .sidebar h2, .content h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .filter-section {
+      margin-bottom: 20px;
+    }
+    .filter-section label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .filter-section input, .filter-section select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .filter-section button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .opportunity {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .opportunity img {
+      width: 150px;
+      height: 100px;
+      border-radius: 4px;
+      margin-right: 20px;
+    }
+    .opportunity-info {
+      flex: 1;
+    }
+    .opportunity-info h3 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+    .opportunity-info p {
+      margin: 5px 0;
+    }
+    .opportunity-info .more-info {
+      text-align: right;
+    }
+    .opportunity-info .more-info button {
+      padding: 8px 16px;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img alt="V logo" src="v.png" width="60" height="60" />
+      <span>VolunTeerHub</span>
+    </div>
+    <div class="nav-links">
+      <a href="volunteerhub.html">Home</a>
+      <a href="discover.html" class="active">Discover Opportunities</a>
+    </div>
+    <a href="signup.html">
+      <button class="login-button">SIGN IN</button>
+    </a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    Discover Opportunities
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="sidebar">
+      <h2>Narrow Choices</h2>
+      <div class="filter-section">
+        <button>Reset Filters</button>
+      </div>
+      <div class="filter-section">
+        <label for="keyword">Keyword</label>
+        <input id="keyword" placeholder="Search..." type="text"/>
+      </div>
+      <div class="filter-section">
+        <label for="virtual">In-Person or Virtual <i class="fas fa-info-circle"></i></label>
+        <select id="virtual">
+          <option>Virtual</option>
+        </select>
+      </div>
+      <div class="filter-section">
+        <label for="Baranggay">Baranggay</label>
+        <input id="Baranggay" type="text"/>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>7 of 7 Opportunities</h2>
+      <div class="opportunity">
+        <img alt="Image of a barn in a rural setting" height="100" src="https://storage.googleapis.com/a1aa/image/odGnISSUT1IpEluvFKucmpxbBQFRtsItEhWBv5bkIFji0b9E.jpg" width="150"/>
+        <div class="opportunity-info">
+          <h3>U.S. Army Corps of Engineers</h3>
+          <p><strong>Educational Curriculum Volunteer</strong></p>
+          <p><i class="fas fa-map-marker-alt"></i> Los Angeles District, California</p>
+          <p><i class="fas fa-briefcase"></i> Position</p>
+          <p><i class="fas fa-calendar-alt"></i> 10/22/2024 - 9/30/2025</p>
+          <div class="more-info">
+            <button>More info</button>
+          </div>
+        </div>
+      </div>
+      <div class="opportunity">
+        <img alt="Image of a barn in a rural setting" height="100" src="https://storage.googleapis.com/a1aa/image/odGnISSUT1IpEluvFKucmpxbBQFRtsItEhWBv5bkIFji0b9E.jpg" width="150"/>
+        <div class="opportunity-info">
+          <h3>National Park Service</h3>
+          <p><strong>Remote Historic Records Transcriber</strong></p>
+          <p><i class="fas fa-map-marker-alt"></i> Cedar Creek & Belle Grove National Historical Park, Virginia</p>
+          <p><i class="fas fa-briefcase"></i> Position</p>
+          <p><i class="fas fa-calendar-alt"></i> 12/1/2024 - 9/30/2025</p>
+          <div class="more-info">
+            <button>More info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

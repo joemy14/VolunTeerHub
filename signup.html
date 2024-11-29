@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>VolunteerHub Login</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 400px;
+      margin-top: 20px;
+    }
+
+    .header img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      color: #0071BC;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 16px;
+      color: #333;
+      margin: 10px 0 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .buttons button {
+      background-color: #0071BC;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .buttons button:nth-child(2) {
+      background-color: #fff;
+      color: #0071BC;
+      border: 1px solid #0071BC;
+    }
+
+    .signin-section {
+      text-align: left;
+    }
+
+    .signin-section h2 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .signin-section p {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .signin-section p a {
+      color: #0071BC;
+      text-decoration: none;
+    }
+
+    .signin-section input[type="email"],
+    .signin-section input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .signin-section label {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .signin-section .show-password {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .signin-section .show-password input {
+      margin-right: 10px;
+    }
+
+    .signin-section .signin-button {
+      background-color: #0071BC;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .signin-section .gov-id {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .signin-section .gov-id a {
+      color: #0071BC;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="signup">
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img alt="V logo" height="60" src="v.png" width="60"/>
+      <span>VolunTeerHub</span>
+    </div>
+    <div class="nav-links">
+      <a href="volunteerhub.html">Home</a>
+      <a href="discover.html">Discover Opportunities</a>
+    </div>
+    <a href="signup.html">
+      <button class="login-button">SIGN IN</button>
+    </a>
+  </div>
+
+  <!-- Login Page Content -->
+  <div class="container">
+    <div class="buttons">
+        <a href="signup.html">
+            <button>Sign in</button>
+        </a>
+        <a href="create.html">
+            <button>Create an account</button>
+        </a>
+    </div>
+    <div class="signin-section">
+      <h2>Sign in for existing users</h2>   
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email"/>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password"/>
+      <div class="show-password">
+        <input id="show-password" type="checkbox"/>
+        <label for="show-password">Show password</label>
+      </div>
+      <button class="signin-button">Sign in</button>
+      <div class="gov-id">
+        <a href="#">Forgot your password?</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+`

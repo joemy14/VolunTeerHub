@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>VolunteerHub Login</title>
+  <title>Forgot Password - VolunteerHub</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
   <style>
     .container {
       background-color: #fff;
@@ -57,41 +56,23 @@
       border: 1px solid #0071BC;
     }
 
-    .buttons a button.active {
-      background-color: #0071BC;
-      color: #fff;
-    }
-
-    .buttons a button:not(.active) {
-      background-color: #fff;
-      border: 1px solid #0071BC;
-      color: #0071BC;
-
-    }
-
-    .signin-section {
+    .forgot-section {
       text-align: left;
     }
 
-    .signin-section h2 {
+    .forgot-section h2 {
       font-size: 18px;
       color: #333;
       margin-bottom: 10px;
     }
 
-    .signin-section p {
+    .forgot-section p {
       font-size: 14px;
       color: #333;
       margin-bottom: 20px;
     }
 
-    .signin-section p a {
-      color: #0071BC;
-      text-decoration: none;
-    }
-
-    .signin-section input[type="email"],
-    .signin-section input[type="password"] {
+    .forgot-section input[type="email"] {
       width: 100%;
       padding: 10px;
       margin-bottom: 10px;
@@ -99,22 +80,12 @@
       border-radius: 4px;
     }
 
-    .signin-section label {
+    .forgot-section label {
       font-size: 14px;
       color: #333;
     }
 
-    .signin-section .show-password {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .signin-section .show-password input {
-      margin-right: 10px;
-    }
-
-    .signin-section .signin-button {
+    .forgot-section .reset-button {
       background-color: #0071BC;
       color: #fff;
       border: none;
@@ -123,6 +94,16 @@
       border-radius: 4px;
       cursor: pointer;
       font-size: 16px;
+    }
+
+    .back-to-login {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-to-login a {
+      color: #0071BC;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -142,32 +123,20 @@
     </a>
   </div>
 
-  <!-- Login Page Content -->
+  <!-- Forgot Password Page Content -->
   <div class="container">
-    <div class="buttons">
-        <a href="signup.html">
-            <button class="active">Sign in</button>
-        </a>
-        <a href="create.html">
-            <button>Create an account</button>
-        </a>
-    </div>
-    <div class="signin-section">
-      <h2>Sign in for existing users</h2>   
+    <div class="forgot-section">
+      <h2>Forgot Your Password?</h2>
+      <p>Enter your email address below, and we’ll send you a link to reset your password.</p>
       <label for="email">Email address</label>
-      <input id="email" name="email" type="email"/>
-      <label for="password">Password</label>
-      <input id="password" name="password" type="password"/>
-      <div class="show-password">
-        <input id="show-password" type="checkbox"/>
-        <label for="show-password">Show password</label>
-      </div>
-      <button class="signin-button">Sign in</button>
-      <div class="gov-id">
-        <a href="forgotpass.html">Forgot your password?</a>
-      </div>
+      <input id="email" name="email" type="email" placeholder="Enter your email"/>
+      <a href="passreset.html">
+        <button class="reset-button">Send Reset Link</button>
+      </a>
+    </div>
+    <div class="back-to-login">
+      <p><a href="signup.html">Back to Login</a></p>
     </div>
   </div>
 </body>
 </html>
-`

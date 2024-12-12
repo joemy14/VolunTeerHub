@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>VolunteerHub Login</title>
+  <title>Password Reset - VolunteerHub</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
   <style>
     .container {
       background-color: #fff;
@@ -57,72 +56,36 @@
       border: 1px solid #0071BC;
     }
 
-    .buttons a button.active {
-      background-color: #0071BC;
-      color: #fff;
-    }
-
-    .buttons a button:not(.active) {
-      background-color: #fff;
-      border: 1px solid #0071BC;
-      color: #0071BC;
-
-    }
-
-    .signin-section {
+    .reset-section {
       text-align: left;
     }
 
-    .signin-section h2 {
+    .reset-section h2 {
       font-size: 18px;
       color: #333;
       margin-bottom: 10px;
     }
 
-    .signin-section p {
+    .reset-section p {
       font-size: 14px;
       color: #333;
       margin-bottom: 20px;
     }
 
-    .signin-section p a {
+    .reset-section .success-message {
+      font-size: 16px;
+      color: green;
+      margin-bottom: 20px;
+    }
+
+    .reset-section .back-to-login {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .reset-section .back-to-login a {
       color: #0071BC;
       text-decoration: none;
-    }
-
-    .signin-section input[type="email"],
-    .signin-section input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .signin-section label {
-      font-size: 14px;
-      color: #333;
-    }
-
-    .signin-section .show-password {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .signin-section .show-password input {
-      margin-right: 10px;
-    }
-
-    .signin-section .signin-button {
-      background-color: #0071BC;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      width: 100%;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
     }
   </style>
 </head>
@@ -142,32 +105,18 @@
     </a>
   </div>
 
-  <!-- Login Page Content -->
+  <!-- Password Reset Email Sent Content -->
   <div class="container">
-    <div class="buttons">
-        <a href="signup.html">
-            <button class="active">Sign in</button>
-        </a>
-        <a href="create.html">
-            <button>Create an account</button>
-        </a>
-    </div>
-    <div class="signin-section">
-      <h2>Sign in for existing users</h2>   
-      <label for="email">Email address</label>
-      <input id="email" name="email" type="email"/>
-      <label for="password">Password</label>
-      <input id="password" name="password" type="password"/>
-      <div class="show-password">
-        <input id="show-password" type="checkbox"/>
-        <label for="show-password">Show password</label>
+    <div class="reset-section">
+      <h2>Password Reset Email Sent</h2>
+      <p>A password reset link has been sent to your email address. Please check your inbox (and spam folder) for instructions.</p>
+      <div class="success-message">
+        <p>Check your email to reset your password.</p>
       </div>
-      <button class="signin-button">Sign in</button>
-      <div class="gov-id">
-        <a href="forgotpass.html">Forgot your password?</a>
+      <div class="back-to-login">
+        <p><a href="signup.html">Back to Login</a></p>
       </div>
     </div>
   </div>
 </body>
 </html>
-`

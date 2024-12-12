@@ -5,6 +5,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
   <style>
     .container {
       background-color: #fff;
@@ -54,6 +55,17 @@
       background-color: #fff;
       color: #0071BC;
       border: 1px solid #0071BC;
+    }
+
+    .buttons a button.active {
+      background-color: #0071BC;
+      color: #fff;
+    }
+
+    .buttons a button:not(.active) {
+      background-color: #fff;
+      border: 1px solid #0071BC;
+      color: #0071BC;
     }
 
     .signin-section {
@@ -137,7 +149,7 @@
             <button>Sign in</button>
         </a>
         <a href="create.html">
-            <button>Create an account</button>
+            <button class="active">Create an account</button>
         </a>
     </div>
     <div class="signin-section">
@@ -153,8 +165,9 @@
         <label for="show-password">Show password</label>
       </div>
       <button class="signin-button">Create Account</button>
-      <p>By creating an account, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+      <p>By creating an account, you agree to our <a href="terms_of_use.html">Terms of Use</a> and <a href="privacy_policy.html">Privacy Policy</a>.</p>
     </div>
   </div>
+
 </body>
 </html>

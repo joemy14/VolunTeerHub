@@ -169,9 +169,13 @@
   </div>
   <script>
   document.getElementById('show-password').addEventListener('change', function() {
-    const passwordInput = document.getElementById('password');
-    passwordInput.type = this.checked ? 'text' : 'password';
-  });
+    var passwordField = document.getElementById('password');
+    if (this.checked) {
+        passwordField.type = 'text';
+    } else {
+        passwordField.type = 'password';
+    }
+});
 </script>
 </body>
 </html>

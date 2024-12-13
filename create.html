@@ -5,7 +5,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
   <style>
     .container {
       background-color: #fff;
@@ -168,6 +167,11 @@
       <p>By creating an account, you agree to our <a href="terms_of_use.html">Terms of Use</a> and <a href="privacy_policy.html">Privacy Policy</a>.</p>
     </div>
   </div>
-
+<script>
+  document.getElementById('show-password').addEventListener('change', function() {
+    const passwordInput = document.getElementById('password');
+    passwordInput.type = this.checked ? 'text' : 'password';
+  });
+</script>
 </body>
 </html>
